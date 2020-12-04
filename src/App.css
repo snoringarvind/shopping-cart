@@ -1,38 +1,144 @@
-.App {
-  text-align: center;
+.images img {
+  width: 100%;
+  height: 335px;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Card {
+  border: 1px solid;
+  flex: 31.33%;
+  height: 400px;
+  margin: 1%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.CardList {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 1%;
+  margin-top: 10vh;
+}
+.Nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 10vh;
+  background-color: darkgray;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.nav-links {
+  /* border: 1px solid; */
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+}
+.nav-links li {
+  margin: 0;
+  padding: 0;
   color: white;
+  /* border: 1px solid; */
 }
 
-.App-link {
-  color: #61dafb;
+.Cart {
+  margin-top: 10vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#cartLogo {
+  width: 30px;
+  height: 30px;
+  object-position: center;
+  object-fit: contain;
+}
+
+.cartLogo-div {
+  position: relative;
+}
+.cart-quantity {
+  position: absolute;
+  top: 20%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  font-size: 1.4em;
+  color: rgba(255, 0, 0, 0.9);
+  font-weight: 500;
+}
+
+.CartItem table,
+th,
+td {
+  /* border: 1px solid; */
+  text-align: left;
+  padding: 7px 6px;
+}
+.CartItem table,
+tr {
+  width: 100%;
+  border-collapse: collapse;
+  border-bottom: 1px solid;
+}
+
+.CartItem {
+  margin-left: 30%;
+}
+
+.Checkout {
+  border-right: 1px solid;
+  height: 100vh;
+  position: fixed;
+  min-width: 30%;
+}
+
+.pay-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.pay-btn button {
+  margin: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.checkout-header {
+  margin-left: 10%;
+}
+.checkout-table {
+  margin-left: 10%;
+}
+
+.checkout-table table,
+tr {
+  border-bottom: 1px solid;
+}
+
+.Pay {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.setQuantity {
+  display: flex;
+  align-items: center;
+}
+
+.setQuantity form {
+  margin: 0 3px;
+}
+
+.setQuantity select {
+  padding: 3px;
 }
