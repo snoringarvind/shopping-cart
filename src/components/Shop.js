@@ -5,17 +5,28 @@ import { CartContext } from "./CartContext";
 
 const Shop = () => {
   // console.log(rf.kibmkaqf);
-  const { cartValue, dataValue } = useContext(CartContext);
+  const { cartValue, dataValue, filterTextValue } = useContext(CartContext);
   const [cart, setCart] = cartValue;
   const [data] = dataValue;
+  const [filterText, setFilterText] = filterTextValue;
+
+  const Mapping = (card) => {
+    let text = filterText;
+    text = text.toLowerCase();
+
+    let label = card.label;
+    label = label.toLowerCase();
+    console.log(label.indexOf(text));
+    if (label.indexOf(text) === -1) {
+      return;
+    } else {
+      return <Card card={card} key={uniqid()} cart={cart} setCart={setCart} />;
+    }
+  };
 
   return (
     <div className="Shop">
-      <div className="CardList">
-        {data.map((card) => (
-          <Card card={card} key={uniqid()} cart={cart} setCart={setCart} />
-        ))}
-      </div>
+      <div className="CardList">{data.map((card) => Mapping(card))}</div>
     </div>
   );
 };

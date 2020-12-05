@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className="Home">
       <picture>
-        <source srcset={portraitHome} media="(max-width: 520px)" />
+        <source srcSet={portraitHome} media="(max-width: 520px)" />
         <img src={landScapeHome} alt={landScapeHome} />
       </picture>
     </div>

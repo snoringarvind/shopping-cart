@@ -5,12 +5,14 @@ export const CartContext = createContext();
 export const CartProvider = (props) => {
   const [cart, setCart] = useState([]);
   const [data, setData] = useState(file);
+  const [filterText, setFilterText] = useState("");
 
   return (
     <CartContext.Provider
       value={{
         cartValue: [cart, setCart],
         dataValue: [data, setData],
+        filterTextValue: [filterText, setFilterText],
       }}
     >
       {props.children}
