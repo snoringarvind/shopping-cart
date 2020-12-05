@@ -10,8 +10,6 @@ import ItemDetails from "./components/ItemDetails";
 import React from "react";
 
 const App = () => {
-  // const { cartValue, dataValue, viewItemValue } = useContext(CartContext);
-  // const [viewItem, setViewItem] = viewItemValue;
   return (
     <CartProvider>
       <Router>
