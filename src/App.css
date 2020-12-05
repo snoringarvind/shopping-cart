@@ -142,3 +142,13 @@ tr {
 .setQuantity select {
   padding: 3px;
 }
+
+.ItemDetails {
+  margin-top: 10vh;
+}
+.ItemDetails img {
+  width: 100%;
+  max-height: 50vh;
+  object-fit: contain;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}

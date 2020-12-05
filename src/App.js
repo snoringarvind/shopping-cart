@@ -6,6 +6,7 @@ import Cart from "./components/Cart";
 import Nav from "./components/Nav";
 import Pay from "./components/Pay";
 import { CartProvider } from "./components/CartContext";
+import ItemDetails from "./components/ItemDetails";
 
 const App = () => {
   return (
@@ -15,7 +16,8 @@ const App = () => {
           <Nav />
           <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/shop" component={Shop} />
+            <Route path="/shop" exact component={Shop} />
+            <Route path="/shop/:id" component={ItemDetails} />
             <Route path="/cart" exact component={Cart} />
             <Route path="/cart/checkout" exact component={Pay} />
           </Switch>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Card = ({ card, cart, setCart }) => {
   const addCartHandler = () => {
@@ -20,7 +21,14 @@ const Card = ({ card, cart, setCart }) => {
   return (
     <div className="Card">
       <div className="images">
-        <img src={card.src} alt={card.src} />
+        <Link
+          to={{
+            pathname: `/shop${card.src}`,
+            state: `${card.src}`,
+          }}
+        >
+          <img src={card.src} alt={card.src} />
+        </Link>
       </div>
       <div className="description">
         <div className="label">{card.label}</div>
