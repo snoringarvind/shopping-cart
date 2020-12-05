@@ -8,7 +8,7 @@ const Nav = () => {
   const [cart, setCart] = cartValue;
   let sum = 0;
   cart.forEach((item, index) => {
-    sum = sum + item.quantity;
+    sum = sum + Number(item.quantity);
   });
   return (
     <div className="Nav">

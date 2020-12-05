@@ -5,13 +5,21 @@ export const CartContext = createContext();
 export const CartProvider = (props) => {
   const [cart, setCart] = useState([]);
 
-  const [dropDownQuantity, setDropDownQuantity] = useState("");
+  // const [quantity, setQuantity] = useState("3");
 
-  // const [quantity, setQuantity] = useState(1);
-  // console.log(cart);
+  // const setQuantityHandler = (e) => {
+  //   console.log(e.target.value);
+  //   setQuantity(e.target.value);
+  // };
 
   return (
-    <CartContext.Provider value={{ cartValue: [cart, setCart] }}>
+    <CartContext.Provider
+      value={{
+        cartValue: [cart, setCart],
+        // quantityValue: [quantity, setQuantity],
+        // setQuantityHandlerValue: setQuantityHandler,
+      }}
+    >
       {props.children}
     </CartContext.Provider>
   );

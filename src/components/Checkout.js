@@ -5,8 +5,8 @@ const Checkout = ({ cart }) => {
   let totalItems = 0;
   let totalAmount = 0;
   cart.forEach((item, index) => {
-    totalItems += item.quantity;
-    totalAmount += item.quantity * item.price;
+    totalItems += Number(item.quantity);
+    totalAmount += Number(item.quantity) * Number(item.price);
   });
 
   return (
