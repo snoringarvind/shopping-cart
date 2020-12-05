@@ -3,32 +3,43 @@
   height: 335px;
   object-fit: cover;
   object-position: center;
-  border: 1px solid;
+  /* border: 1px solid; */
+  border-radius: 5px;
 }
 
 .Card {
-  border: 1px solid;
+  /* border: 1px solid; */
   flex: 31.33%;
   height: 400px;
   margin: 1%;
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  border-radius: 5px;
 }
 
 .CardList {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  margin: 1%;
+  /* margin: 1%; */
   margin-top: 10vh;
+  /* padding: 10px; */
+  /* width: 100%; */
+  /* overflow-x: hidden; */
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
 }
 .Nav {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  min-height: 10vh;
-  background-color: darkgray;
+  height: 10vh;
+  /* background-color: darkgray; */
   display: flex;
   align-items: center;
+  background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #cfd9df;
 }
 
 .nav-links {
@@ -53,6 +64,7 @@
 
 .Cart {
   margin-top: 10vh;
+  font-size: 1em;
 }
 
 #cartLogo {
@@ -71,8 +83,11 @@
   left: 70%;
   transform: translate(-50%, -50%);
   font-size: 1.4em;
-  color: rgba(255, 0, 0, 0.9);
-  font-weight: 500;
+  /* color: rgba(255, 0, 0, 0.9); */
+  /* font-weight: 500; */
+  font-size: 1.2em;
+  font-weight: bold;
+  color: white;
 }
 
 .CartItem table,
@@ -100,24 +115,23 @@ tr {
   min-width: 30%;
 }
 
+.checkout-div1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .pay-btn {
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin: 8px;
+  padding: 4px;
 }
 
 .pay-btn button {
-  margin: 10px;
-  padding: 5px 10px;
   cursor: pointer;
 }
-
-.checkout-header {
-  margin-left: 10%;
-}
-.checkout-table {
-  margin-left: 10%;
-}
-
 .checkout-table table,
 tr {
   border-bottom: 1px solid;
@@ -144,11 +158,130 @@ tr {
 }
 
 .ItemDetails {
+  min-height: 90vh;
   margin-top: 10vh;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
-.ItemDetails img {
-  width: 100%;
+.item-img img {
+  min-width: 10vh;
   max-height: 50vh;
   object-fit: contain;
+  border-radius: 5px;
+  box-shadow: 3px 3px 15px darkgray;
+}
+
+.item-img {
+  display: flex;
+  justify-content: center;
+}
+.item-details-description div {
+  margin: 10px 20px;
+
+  width: 250px;
+  padding: 10px;
+  border: 1px solid lightpink;
+  border-radius: 5px;
+
+  /* padding: 10px; */
+}
+
+.item-details-description {
+  display: flex;
+  justify-content: center;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: black;
+  min-width: 10vh;
+}
+
+.item-details-description p {
+  border-bottom: 1px solid;
+  /* padding: 10px; */
+}
+.item-details-description button {
+  padding: 10px;
+  color: black;
+  font-size: 0.9em;
+  font-weight: bold;
+  margin-bottom: 2px;
+  /* border: none; */
+}
+.item-details-description-button {
+  display: flex;
+  justify-content: center;
+}
+.add-cart-button {
+  float: right;
+  margin: 0.3em;
+  cursor: pointer;
+}
+
+.add-cart-button:hover {
+  background-color: red;
+  border-radius: 5px;
+  padding: 3px;
+}
+.add-cart-button::after {
+  clear: both;
+  display: table;
+  content: "";
+}
+.add-cart-button img {
+  width: 30px;
+  height: 30px;
+}
+.Home {
+  margin-top: 10vh;
+}
+.Home img {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+  object-position: center;
+  position: fixed;
+}
+
+.description {
+  margin: 10px;
+  font-weight: bold;
+  font-family: cursive;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.Cart {
+  min-height: 90vh;
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+@media only screen and (max-width: 800px) {
+  .Card {
+    flex: 48%;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .Card {
+    flex: 100%;
+  }
+  .Cart {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    font-size: 0.9em;
+  }
+
+  .Checkout {
+    position: relative;
+    flex: 100%;
+    border-right: none;
+    height: 30vh;
+  }
+
+  .CartItem {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .images img {
+    /* background-image: url("../Images/woman/portraitHome.jpg"); */
+  }
 }

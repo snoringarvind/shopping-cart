@@ -7,8 +7,11 @@ import Nav from "./components/Nav";
 import Pay from "./components/Pay";
 import { CartProvider } from "./components/CartContext";
 import ItemDetails from "./components/ItemDetails";
+import React from "react";
 
 const App = () => {
+  // const { cartValue, dataValue, viewItemValue } = useContext(CartContext);
+  // const [viewItem, setViewItem] = viewItemValue;
   return (
     <CartProvider>
       <Router>

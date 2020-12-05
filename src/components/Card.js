@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import cartLogo from "../cartLogo3.png";
 
-const Card = ({ card, cart, setCart }) => {
+const Card = ({ card, cart, setCart, viewItem, setViewItem }) => {
   const addCartHandler = () => {
     const duplicate = cart.some((item, i) => {
       if (item.label === card.label) {
@@ -17,7 +18,6 @@ const Card = ({ card, cart, setCart }) => {
       setCart((prev) => [...prev, cartItems]);
     }
   };
-
   return (
     <div className="Card">
       <div className="images">
@@ -31,17 +31,11 @@ const Card = ({ card, cart, setCart }) => {
         </Link>
       </div>
       <div className="description">
+        <div className="add-cart-button">
+          <img src={cartLogo} alt="addCart" onClick={addCartHandler} />
+        </div>
         <div className="label">{card.label}</div>
         <div className="price">Rs. {card.price}</div>
-        <div className="add-cart-button">
-          <button
-            type="button"
-            onClick={addCartHandler}
-            style={{ cursor: "pointer" }}
-          >
-            Add to cart
-          </button>
-        </div>
       </div>
     </div>
   );
