@@ -5,7 +5,7 @@ import { CartContext } from "./CartContext";
 
 const Nav = () => {
   const { cartValue } = useContext(CartContext);
-  const [cart, setCart] = cartValue;
+  const [cart] = cartValue;
   let sum = 0;
   cart.forEach((item, index) => {
     sum = sum + Number(item.quantity);

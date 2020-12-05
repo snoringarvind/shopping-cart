@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import Card from "./Card";
 import uniqid from "uniqid";
 import { CartContext } from "./CartContext";
@@ -7,7 +7,7 @@ const Shop = () => {
   // console.log(rf.kibmkaqf);
   const { cartValue, dataValue } = useContext(CartContext);
   const [cart, setCart] = cartValue;
-  const [data, setData] = dataValue;
+  const [data] = dataValue;
 
   return (
     <div className="Shop">

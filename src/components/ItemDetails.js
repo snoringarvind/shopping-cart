@@ -2,9 +2,9 @@ import React, { useContext } from "react";
 import { CartContext } from "./CartContext";
 
 const ItemDetails = ({ location }) => {
-  const { cartValue, dataValue, viewItemValue } = useContext(CartContext);
+  const { cartValue, dataValue } = useContext(CartContext);
   const [cart, setCart] = cartValue;
-  const [data, setData] = dataValue;
+  const [data] = dataValue;
 
   // console.log(viewItem);
   let card = "";
