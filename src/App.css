@@ -205,9 +205,15 @@ tr {
   font-weight: bold;
   margin-bottom: 2px;
   /* border: none; */
+  cursor: pointer;
+}
+
+.item-details-description button:hover {
+  background-color: red;
 }
 .item-details-description-button {
   display: flex;
+
   justify-content: center;
 }
 .add-cart-button {
