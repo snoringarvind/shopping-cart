@@ -47,6 +47,10 @@
   .Card {
     width: calc(100% - (2 * var(--card-margin)));
   }
+  .card-images img {
+    width: 100%;
+    height: 30vh;
+  }
 }
 
 @media screen and (max-width: 600px) {
