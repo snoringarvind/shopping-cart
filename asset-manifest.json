@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/shoppingapp/static/css/main.5b8d5ffa.chunk.css",
-    "main.js": "/shoppingapp/static/js/main.5cd9b9f0.chunk.js",
-    "main.js.map": "/shoppingapp/static/js/main.5cd9b9f0.chunk.js.map",
+    "main.js": "/shoppingapp/static/js/main.f098fdc5.chunk.js",
+    "main.js.map": "/shoppingapp/static/js/main.f098fdc5.chunk.js.map",
     "runtime-main.js": "/shoppingapp/static/js/runtime-main.aacab488.js",
     "runtime-main.js.map": "/shoppingapp/static/js/runtime-main.aacab488.js.map",
-    "static/js/2.10850996.chunk.js": "/shoppingapp/static/js/2.10850996.chunk.js",
-    "static/js/2.10850996.chunk.js.map": "/shoppingapp/static/js/2.10850996.chunk.js.map",
+    "static/js/2.4546fb97.chunk.js": "/shoppingapp/static/js/2.4546fb97.chunk.js",
+    "static/js/2.4546fb97.chunk.js.map": "/shoppingapp/static/js/2.4546fb97.chunk.js.map",
     "static/js/3.6142dd54.chunk.js": "/shoppingapp/static/js/3.6142dd54.chunk.js",
     "static/js/3.6142dd54.chunk.js.map": "/shoppingapp/static/js/3.6142dd54.chunk.js.map",
     "index.html": "/shoppingapp/index.html",
     "static/css/main.5b8d5ffa.chunk.css.map": "/shoppingapp/static/css/main.5b8d5ffa.chunk.css.map",
-    "static/js/2.10850996.chunk.js.LICENSE.txt": "/shoppingapp/static/js/2.10850996.chunk.js.LICENSE.txt",
+    "static/js/2.4546fb97.chunk.js.LICENSE.txt": "/shoppingapp/static/js/2.4546fb97.chunk.js.LICENSE.txt",
     "static/media/ankleLengthSkinFitJeans.jpg": "/shoppingapp/static/media/ankleLengthSkinFitJeans.cdcf9853.jpg",
     "static/media/cartLogo3.0edb5901.png": "/shoppingapp/static/media/cartLogo3.0edb5901.png",
     "static/media/casualOfficeWear.jpg": "/shoppingapp/static/media/casualOfficeWear.e84408c0.jpg",
@@ -42,8 +42,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.aacab488.js",
-    "static/js/2.10850996.chunk.js",
+    "static/js/2.4546fb97.chunk.js",
     "static/css/main.5b8d5ffa.chunk.css",
-    "static/js/main.5cd9b9f0.chunk.js"
+    "static/js/main.f098fdc5.chunk.js"
   ]
 }
