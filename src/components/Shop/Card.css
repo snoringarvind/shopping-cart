@@ -1,5 +1,5 @@
 .Card {
-  border: 1px solid lightyellow;
+  /* border: 1px solid lightyellow; */
   width: calc(33.33% - (2 * var(--card-margin)));
   height: 60vh;
   margin: var(--card-margin);
