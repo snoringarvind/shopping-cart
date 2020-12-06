@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/shoppingapp/static/css/main.b1da67bd.chunk.css",
-    "main.js": "/shoppingapp/static/js/main.ba049744.chunk.js",
-    "main.js.map": "/shoppingapp/static/js/main.ba049744.chunk.js.map",
-    "runtime-main.js": "/shoppingapp/static/js/runtime-main.a79a7a9d.js",
-    "runtime-main.js.map": "/shoppingapp/static/js/runtime-main.a79a7a9d.js.map",
-    "static/js/2.b0b6ee7c.chunk.js": "/shoppingapp/static/js/2.b0b6ee7c.chunk.js",
-    "static/js/2.b0b6ee7c.chunk.js.map": "/shoppingapp/static/js/2.b0b6ee7c.chunk.js.map",
-    "static/js/3.0fb46a7f.chunk.js": "/shoppingapp/static/js/3.0fb46a7f.chunk.js",
-    "static/js/3.0fb46a7f.chunk.js.map": "/shoppingapp/static/js/3.0fb46a7f.chunk.js.map",
+    "main.css": "/shoppingapp/static/css/main.5b8d5ffa.chunk.css",
+    "main.js": "/shoppingapp/static/js/main.52336ece.chunk.js",
+    "main.js.map": "/shoppingapp/static/js/main.52336ece.chunk.js.map",
+    "runtime-main.js": "/shoppingapp/static/js/runtime-main.aacab488.js",
+    "runtime-main.js.map": "/shoppingapp/static/js/runtime-main.aacab488.js.map",
+    "static/js/2.25550960.chunk.js": "/shoppingapp/static/js/2.25550960.chunk.js",
+    "static/js/2.25550960.chunk.js.map": "/shoppingapp/static/js/2.25550960.chunk.js.map",
+    "static/js/3.6142dd54.chunk.js": "/shoppingapp/static/js/3.6142dd54.chunk.js",
+    "static/js/3.6142dd54.chunk.js.map": "/shoppingapp/static/js/3.6142dd54.chunk.js.map",
     "index.html": "/shoppingapp/index.html",
-    "static/css/main.b1da67bd.chunk.css.map": "/shoppingapp/static/css/main.b1da67bd.chunk.css.map",
-    "static/js/2.b0b6ee7c.chunk.js.LICENSE.txt": "/shoppingapp/static/js/2.b0b6ee7c.chunk.js.LICENSE.txt",
+    "static/css/main.5b8d5ffa.chunk.css.map": "/shoppingapp/static/css/main.5b8d5ffa.chunk.css.map",
+    "static/js/2.25550960.chunk.js.LICENSE.txt": "/shoppingapp/static/js/2.25550960.chunk.js.LICENSE.txt",
     "static/media/ankleLengthSkinFitJeans.jpg": "/shoppingapp/static/media/ankleLengthSkinFitJeans.cdcf9853.jpg",
     "static/media/cartLogo3.0edb5901.png": "/shoppingapp/static/media/cartLogo3.0edb5901.png",
     "static/media/casualOfficeWear.jpg": "/shoppingapp/static/media/casualOfficeWear.e84408c0.jpg",
@@ -41,9 +41,9 @@
     "static/media/yellowTankTop.jpg": "/shoppingapp/static/media/yellowTankTop.dc5492bc.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a79a7a9d.js",
-    "static/js/2.b0b6ee7c.chunk.js",
-    "static/css/main.b1da67bd.chunk.css",
-    "static/js/main.ba049744.chunk.js"
+    "static/js/runtime-main.aacab488.js",
+    "static/js/2.25550960.chunk.js",
+    "static/css/main.5b8d5ffa.chunk.css",
+    "static/js/main.52336ece.chunk.js"
   ]
 }
