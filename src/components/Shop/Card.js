@@ -25,7 +25,7 @@ const Card = ({ card, cart, setCart }) => {
       <div className="card-images">
         <Link
           to={{
-            pathname: `/shoppingapp/shop${card.src}`,
+            pathname: `/shop${card.src}`,
             state: `${card.src}`,
           }}
         >

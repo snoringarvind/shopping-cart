@@ -27,18 +27,18 @@ const Nav = () => {
       <div>
         <div className="nav-links">
           <div className="nav-item1" onClick={handleShopClick}>
-            <Link to="/shoppingapp/" className="nav-Link">
+            <Link to="/" className="nav-Link">
               <div>Home</div>
             </Link>
           </div>
           <div className="nav-item2" onClick={handleShopClick}>
-            <Link to="/shoppingapp/shop" className="nav-Link">
+            <Link to="/shop" className="nav-Link">
               <div>Shop</div>
             </Link>
           </div>
-          {currentLocation === "/shoppingapp/shop" ? <SearchBar /> : ""}
+          {currentLocation === "/shop" ? <SearchBar /> : ""}
           <div className="nav-item3" onClick={handleShopClick}>
-            <Link to="/shoppingapp/cart" className="nav-Link">
+            <Link to="/cart" className="nav-Link">
               <div className="nav-item3-div">
                 <div className="nav-cartLogo">
                   <img src={cartLogo} alt="cartLogo" />
