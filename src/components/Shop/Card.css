@@ -27,7 +27,7 @@
   cursor: pointer;
 }
 
-.card-add-cart-button:hover {
+.card-add-cart-button:active {
   background-color: red;
   border-radius: 5px;
   padding: 3px;
