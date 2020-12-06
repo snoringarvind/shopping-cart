@@ -18,9 +18,9 @@ const Nav = () => {
   );
 
   const handleShopClick = () => {
-    setCurrentLocation(window.location.pathname);
-    console.log(currentLocation);
-    // console.log(window.location);
+    setCurrentLocation(window.location.hash);
+    // console.log(currentLocation);
+    // console.log(window.location.hash);
   };
   return (
     <div className="Nav">
@@ -36,7 +36,7 @@ const Nav = () => {
               <div>Shop</div>
             </Link>
           </div>
-          {currentLocation === "/shop" ? <SearchBar /> : ""}
+          {currentLocation === "#/shop" ? <SearchBar /> : ""}
           <div className="nav-item3" onClick={handleShopClick}>
             <Link to="/cart" className="nav-Link">
               <div className="nav-item3-div">
