@@ -33,8 +33,10 @@ const Card = ({ card, cart, setCart }) => {
         </Link>
       </div>
       <div className="card-description">
-        <div className="card-add-cart-button">
-          <img src={cartLogo} alt="addCart" onClick={addCartHandler} />
+        <div className="card-add-cart">
+          <button type="button" onClick={addCartHandler}>
+            <img src={cartLogo} alt="addCart" />
+          </button>
         </div>
         <div className="card-label">{card.label}</div>
         <div className="card-price">Rs. {card.price}</div>
