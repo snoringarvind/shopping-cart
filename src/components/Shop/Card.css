@@ -27,7 +27,7 @@
   cursor: pointer;
 }
 
-.card-add-cart-button:active {
+.card-add-cart-button img:active {
   background-color: red;
   border-radius: 5px;
   padding: 3px;

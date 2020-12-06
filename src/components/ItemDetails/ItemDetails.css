@@ -46,7 +46,7 @@
   cursor: pointer;
 }
 
-.item-details-description button:active {
+.item-details-description-button button:active {
   background-color: red;
 }
 .item-details-description-button {
