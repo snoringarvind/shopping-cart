@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/shoppingapp/static/css/main.77630be5.chunk.css",
+    "main.css": "/shoppingapp/static/css/main.3dd3b08f.chunk.css",
     "main.js": "/shoppingapp/static/js/main.c3c0459b.chunk.js",
     "main.js.map": "/shoppingapp/static/js/main.c3c0459b.chunk.js.map",
     "runtime-main.js": "/shoppingapp/static/js/runtime-main.aacab488.js",
@@ -10,7 +10,7 @@
     "static/js/3.6142dd54.chunk.js": "/shoppingapp/static/js/3.6142dd54.chunk.js",
     "static/js/3.6142dd54.chunk.js.map": "/shoppingapp/static/js/3.6142dd54.chunk.js.map",
     "index.html": "/shoppingapp/index.html",
-    "static/css/main.77630be5.chunk.css.map": "/shoppingapp/static/css/main.77630be5.chunk.css.map",
+    "static/css/main.3dd3b08f.chunk.css.map": "/shoppingapp/static/css/main.3dd3b08f.chunk.css.map",
     "static/js/2.4546fb97.chunk.js.LICENSE.txt": "/shoppingapp/static/js/2.4546fb97.chunk.js.LICENSE.txt",
     "static/media/ankleLengthSkinFitJeans.jpg": "/shoppingapp/static/media/ankleLengthSkinFitJeans.cdcf9853.jpg",
     "static/media/cartLogo3.0edb5901.png": "/shoppingapp/static/media/cartLogo3.0edb5901.png",
@@ -43,7 +43,7 @@
   "entrypoints": [
     "static/js/runtime-main.aacab488.js",
     "static/js/2.4546fb97.chunk.js",
-    "static/css/main.77630be5.chunk.css",
+    "static/css/main.3dd3b08f.chunk.css",
     "static/js/main.c3c0459b.chunk.js"
   ]
 }
