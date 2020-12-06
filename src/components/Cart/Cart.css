@@ -1,6 +1,6 @@
 .Cart {
-  margin-top: 10vh;
+  margin-top: var(--nav-height);
   font-size: 1em;
-  min-height: 90vh;
+  min-height: var(--page-height);
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }

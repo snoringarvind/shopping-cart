@@ -25,7 +25,11 @@ const Shop = () => {
     }
   };
 
-  return <div className="Shop">{data.map((card) => Mapping(card))}</div>;
+  return (
+    <div className="Shop">
+      <div className="Cardlist">{data.map((card) => Mapping(card))}</div>
+    </div>
+  );
 };
 
 export default Shop;

@@ -10,6 +10,7 @@ import ItemDetails from "./components/ItemDetails/ItemDetails";
 import React from "react";
 
 const App = () => {
+  console.log(window.location);
   return (
     <CartProvider>
       <Router>

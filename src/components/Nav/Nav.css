@@ -16,6 +16,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  font-size: 1.3em;
 }
 
 .Nav > div {
@@ -39,7 +40,7 @@
   object-fit: contain;
   object-position: center;
   /* border: 1px solid; */
-  /* margin-right: 10px; */
+  /* margin-right: 20px; */
 }
 
 .nav-cartLogo {
@@ -47,6 +48,7 @@
   /* border: 1px solid; */
   width: 40px;
   height: 40px;
+  padding: 2px;
   margin-right: 10px;
 }
 .nav-cart-quantity span {
@@ -67,10 +69,18 @@
   .Nav {
     font-size: 1.2em;
   }
+  .nav-cartLogo img {
+    width: 90%;
+    height: 90%;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .Nav {
     font-size: 1.2em;
+  }
+  .nav-cartLogo img {
+    width: 90%;
+    height: 90%;
   }
 }

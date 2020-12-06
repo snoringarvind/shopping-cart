@@ -1,9 +1,9 @@
 .Home {
-  margin-top: 10vh;
+  margin-top: var(--nav-height);
 }
 .Home img {
   width: 100%;
-  height: 90vh;
+  min-height: var(--page-height);
   object-fit: cover;
   object-position: center;
   position: fixed;

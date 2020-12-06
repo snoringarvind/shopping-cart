@@ -1,9 +1,13 @@
-.Shop {
+.Cardlist {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  /* margin: var(--shop-margin); */
+  margin: 0.5%;
+}
+
+.Shop {
   min-height: var(--page-height);
   margin-top: var(--nav-height);
   background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
-  /* margin: var(--shop-margin); */
 }

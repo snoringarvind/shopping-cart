@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import cartLogo from "./cartLogo3.png";
 import "./Card.css";
@@ -19,9 +19,17 @@ const Card = ({ card, cart, setCart }) => {
       setCart((prev) => [...prev, cartItems]);
     }
   };
+  const [currentLocation, setCurrentLocation] = useState(
+    window.location.pathname
+  );
+  const handleShopClick = () => {
+    setCurrentLocation(window.location.pathname);
+    console.log(currentLocation);
+    // console.log(window.location);
+  };
   return (
     <div className="Card">
-      <div className="card-images">
+      <div className="card-images" onClick={handleShopClick}>
         <Link
           to={{
             pathname: `/shoppingapp/shop${card.src}`,

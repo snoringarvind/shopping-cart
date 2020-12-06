@@ -1,14 +1,15 @@
 .ItemDetails {
-  min-height: 90vh;
-  margin-top: 10vh;
+  min-height: var(--page-height);
+  margin-top: var(--nav-height);
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 .item-details-img img {
   min-width: 10vh;
   max-height: 50vh;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 5px;
   box-shadow: 3px 3px 15px darkgray;
+  margin: 10px;
 }
 
 .item-details-img {
