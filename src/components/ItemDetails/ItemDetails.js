@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import { CartContext } from "./CartContext";
-
+import { CartContext } from "../CartContext";
+import "./ItemDetails.css";
 const ItemDetails = ({ location }) => {
   const { cartValue, dataValue } = useContext(CartContext);
   const [cart, setCart] = cartValue;
@@ -35,7 +35,7 @@ const ItemDetails = ({ location }) => {
 
   return (
     <div className="ItemDetails">
-      <div className="item-img">
+      <div className="item-details-img">
         <img src={location.state} alt={location.state}></img>
       </div>
       <div className="item-details-description">

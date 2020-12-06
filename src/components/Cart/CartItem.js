@@ -1,4 +1,6 @@
 import React from "react";
+import "./CartItem.css";
+import uniqid from "uniqid";
 
 const CartItem = ({ item, cart, setCart }) => {
   const deleteItemHandler = () => {
@@ -44,10 +46,10 @@ const CartItem = ({ item, cart, setCart }) => {
     <tr>
       <td>{item.label}</td>
       <td>{item.price}</td>
-      <td className="setQuantity">
+      <td className="cart-item-setQuantity">
         {item.quantity}
         <form>
-          <select id="quantity" name="quantity" onChange={xr} value={yz()}>
+          <select name="quantity" onChange={xr} value={yz()} key={uniqid()}>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -59,9 +61,8 @@ const CartItem = ({ item, cart, setCart }) => {
       <td>{amount}</td>
       <td
         type="button"
-        className="delete"
+        className="cart-item-delete-btn"
         onClick={deleteItemHandler}
-        style={{ cursor: "pointer", color: "red" }}
       >
         X
       </td>

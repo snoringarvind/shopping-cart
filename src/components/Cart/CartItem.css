@@ -1,0 +1,53 @@
+.CartItem table,
+th,
+td {
+  /* border: 1px solid; */
+  text-align: left;
+  padding: 7px 6px;
+}
+.CartItem table,
+tr {
+  width: 100%;
+  border-collapse: collapse;
+  border-bottom: 1px solid;
+}
+
+.CartItem {
+  margin-left: 30%;
+  /* position: fixed; */
+  /* top: 0; */
+  /* border: 1px solid; */
+}
+
+.cart-item-setQuantity {
+  display: flex;
+  align-items: center;
+}
+
+.cart-item-setQuantity form {
+  margin: 0 3px;
+}
+
+.cart-item-setQuantity select {
+  padding: 3px;
+}
+
+.cart-item-delete-btn {
+  cursor: pointer;
+  color: red;
+  font-weight: bolder;
+}
+
+@media screen and (max-device-width: 600px) {
+  .CartItem {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .CartItem {
+    width: 100%;
+    margin-left: 0;
+  }
+}

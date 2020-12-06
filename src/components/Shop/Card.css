@@ -1,0 +1,56 @@
+.Card {
+  border: 1px solid lightyellow;
+  width: calc(33.33% - (2 * var(--card-margin)));
+  height: 400px;
+  margin: var(--card-margin);
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  border-radius: 5px;
+}
+
+.card-images img {
+  width: 100%;
+  height: 335px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px;
+}
+
+.card-description {
+  margin: 10px;
+  font-weight: bold;
+  font-family: cursive;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.card-add-cart-button {
+  float: right;
+  margin: 0.3em;
+  cursor: pointer;
+}
+
+.card-add-cart-button:hover {
+  background-color: red;
+  border-radius: 5px;
+  padding: 3px;
+}
+.card-add-cart-button::after {
+  clear: both;
+  display: table;
+  content: "";
+}
+.card-add-cart-button img {
+  width: 30px;
+  height: 30px;
+}
+
+@media screen and (max-device-width: 600px) {
+  .Card {
+    width: calc(100% - (2 * var(--card-margin)));
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Card {
+    width: calc(100% - (2 * var(--card-margin)));
+  }
+}

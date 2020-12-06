@@ -1,14 +1,15 @@
 import React, { useContext } from "react";
 import Card from "./Card";
 import uniqid from "uniqid";
-import { CartContext } from "./CartContext";
+import { CartContext } from "../CartContext";
+import "./Shop.css";
 
 const Shop = () => {
   // console.log(rf.kibmkaqf);
   const { cartValue, dataValue, filterTextValue } = useContext(CartContext);
   const [cart, setCart] = cartValue;
   const [data] = dataValue;
-  const [filterText, setFilterText] = filterTextValue;
+  const [filterText] = filterTextValue;
 
   const Mapping = (card) => {
     let text = filterText;
@@ -24,11 +25,7 @@ const Shop = () => {
     }
   };
 
-  return (
-    <div className="Shop">
-      <div className="CardList">{data.map((card) => Mapping(card))}</div>
-    </div>
-  );
+  return <div className="Shop">{data.map((card) => Mapping(card))}</div>;
 };
 
 export default Shop;

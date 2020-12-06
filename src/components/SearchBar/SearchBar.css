@@ -1,0 +1,22 @@
+.SearchBar {
+  margin: 3px;
+}
+.SearchBar input {
+  margin: 3px;
+  padding: 2px 8px;
+  font-size: 0.8em;
+  outline: 1px solid lightpink;
+  border: 1px solid lightsalmon;
+}
+
+@media screen and (max-device-width: 600px) {
+  .SearchBar input {
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .SearchBar input {
+    width: 100px;
+  }
+}

@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import cartLogo from "../cartLogo3.png";
+import cartLogo from "./cartLogo3.png";
+import "./Card.css";
 
-const Card = ({ card, cart, setCart, viewItem, setViewItem }) => {
+const Card = ({ card, cart, setCart }) => {
   const addCartHandler = () => {
     const duplicate = cart.some((item, i) => {
       if (item.label === card.label) {
@@ -20,7 +21,7 @@ const Card = ({ card, cart, setCart, viewItem, setViewItem }) => {
   };
   return (
     <div className="Card">
-      <div className="images">
+      <div className="card-images">
         <Link
           to={{
             pathname: `/shoppingapp/shop${card.src}`,
@@ -30,12 +31,12 @@ const Card = ({ card, cart, setCart, viewItem, setViewItem }) => {
           <img src={card.src} alt={card.src} />
         </Link>
       </div>
-      <div className="description">
-        <div className="add-cart-button">
+      <div className="card-description">
+        <div className="card-add-cart-button">
           <img src={cartLogo} alt="addCart" onClick={addCartHandler} />
         </div>
-        <div className="label">{card.label}</div>
-        <div className="price">Rs. {card.price}</div>
+        <div className="card-label">{card.label}</div>
+        <div className="card-price">Rs. {card.price}</div>
       </div>
     </div>
   );

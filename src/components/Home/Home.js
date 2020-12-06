@@ -1,6 +1,7 @@
 import React from "react";
-import portraitHome from "../Images/woman/portraitHome.jpg";
-import landScapeHome from "../Images/woman/landScapeHome.jpg";
+import portraitHome from "./portraitHome.jpg";
+import landScapeHome from "./landScapeHome.jpg";
+import "./Home.css";
 
 const Home = () => {
   return (

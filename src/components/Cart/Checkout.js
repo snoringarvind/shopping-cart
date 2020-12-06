@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Checkout.css";
 
 const Checkout = ({ cart }) => {
   let totalItems = 0;
   let totalAmount = 0;
-  cart.forEach((item, index) => {
+  cart.forEach((item) => {
     totalItems += Number(item.quantity);
     totalAmount += Number(item.quantity) * Number(item.price);
   });
@@ -32,7 +33,7 @@ const Checkout = ({ cart }) => {
           </div>
         </div>
       </div>
-      <div className="pay-btn">
+      <div className="checkout-pay-btn">
         <Link to="/shoppingapp/cart/checkout">
           <button type="button">Pay</button>
         </Link>

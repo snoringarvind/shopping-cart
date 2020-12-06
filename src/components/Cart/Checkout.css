@@ -1,0 +1,48 @@
+.Checkout {
+  border-right: 1px solid;
+  height: 100vh;
+  position: fixed;
+  min-width: 30%;
+  /* border: 1px solid; */
+}
+
+.checkout-div1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.checkout-pay-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px;
+  padding: 4px;
+}
+
+.checkout-pay-btn button {
+  cursor: pointer;
+}
+.checkout-table table,
+tr {
+  border-bottom: 1px solid;
+}
+
+@media screen and (max-device-width: 600px) {
+  .Checkout {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+    border-right: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Checkout {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+    border-right: none;
+  }
+}

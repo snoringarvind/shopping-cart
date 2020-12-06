@@ -1,8 +1,10 @@
 import React, { useContext } from "react";
-import { CartContext } from "./CartContext";
+import { CartContext } from "../CartContext";
 import CartItem from "./CartItem";
 import uniqid from "uniqid";
 import Checkout from "./Checkout";
+import "./Cart.css";
+
 const Cart = () => {
   const { cartValue } = useContext(CartContext);
 

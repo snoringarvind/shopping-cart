@@ -1,12 +1,12 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Home from "./components/Home";
-import Shop from "./components/Shop";
-import Cart from "./components/Cart";
-import Nav from "./components/Nav";
-import Pay from "./components/Pay";
+import Home from "./components/Home/Home";
+import Shop from "./components/Shop/Shop";
+import Cart from "./components/Cart/Cart";
+import Nav from "./components/Nav/Nav";
+import Pay from "./components/Pay/Pay";
 import { CartProvider } from "./components/CartContext";
-import ItemDetails from "./components/ItemDetails";
+import ItemDetails from "./components/ItemDetails/ItemDetails";
 import React from "react";
 
 const App = () => {
