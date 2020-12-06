@@ -19,17 +19,10 @@ const Card = ({ card, cart, setCart }) => {
       setCart((prev) => [...prev, cartItems]);
     }
   };
-  const [currentLocation, setCurrentLocation] = useState(
-    window.location.pathname
-  );
-  const handleShopClick = () => {
-    setCurrentLocation(window.location.pathname);
-    console.log(currentLocation);
-    // console.log(window.location);
-  };
+
   return (
     <div className="Card">
-      <div className="card-images" onClick={handleShopClick}>
+      <div className="card-images">
         <Link
           to={{
             pathname: `/shoppingapp/shop${card.src}`,
