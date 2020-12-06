@@ -34,7 +34,7 @@ const Checkout = ({ cart }) => {
         </div>
       </div>
       <div className="checkout-pay-btn">
-        <Link to="/shoppingapp/cart/checkout">
+        <Link to="/cart/checkout">
           <button type="button">Pay</button>
         </Link>
       </div>
