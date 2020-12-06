@@ -46,7 +46,7 @@
   cursor: pointer;
 }
 
-.item-details-description button:hover {
+.item-details-description button:active {
   background-color: red;
 }
 .item-details-description-button {
