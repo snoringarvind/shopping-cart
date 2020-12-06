@@ -16,11 +16,11 @@ const App = () => {
         <div className="App">
           <Nav />
           <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/shop" exact component={Shop} />
-            <Route path="/shop/:id" component={ItemDetails} />
-            <Route path="/cart" exact component={Cart} />
-            <Route path="/cart/checkout" exact component={Pay} />
+            <Route path="/shoppingapp/" exact component={Home} />
+            <Route path="/shoppingapp/shop" exact component={Shop} />
+            <Route path="/shoppingapp/shop/:id" component={ItemDetails} />
+            <Route path="/shoppingapp/cart" exact component={Cart} />
+            <Route path="/shoppingapp/cart/checkout" exact component={Pay} />
           </Switch>
         </div>
       </Router>

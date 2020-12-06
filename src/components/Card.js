@@ -23,7 +23,7 @@ const Card = ({ card, cart, setCart, viewItem, setViewItem }) => {
       <div className="images">
         <Link
           to={{
-            pathname: `/shop${card.src}`,
+            pathname: `/shoppingapp/shop${card.src}`,
             state: `${card.src}`,
           }}
         >

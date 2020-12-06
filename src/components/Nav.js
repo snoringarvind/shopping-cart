@@ -15,18 +15,18 @@ const Nav = () => {
     <div className="Nav">
       <div className="nav-links">
         <div className="item1">
-          <Link to="/" className="link">
+          <Link to="/shoppingapp/" className="link">
             <div>Home</div>
           </Link>
         </div>
         <div className="item2">
-          <Link to="/shop" className="link">
+          <Link to="/shoppingapp/shop" className="link">
             <div>Shop</div>
           </Link>
         </div>
         <SearchBar />
         <div className="item3">
-          <Link to="/cart" className="link">
+          <Link to="/shoppingapp/cart" className="link">
             <div>
               <div className="cartLogo-div">
                 <img src={cartLogo} alt="cartLogo" id="cartLogo" />
